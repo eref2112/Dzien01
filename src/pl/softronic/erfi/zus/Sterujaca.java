@@ -9,12 +9,22 @@ import eu.softronic.Utils;
 //Można i tak
 import pl.softronic.erfi.zus.dane.*;
 import pl.softronic.erfi.zus.dane.Pracownik;
+import pl.softronic.erfi.zus.podsumowanie.dziedziczenie.KlasaDziedziczacaPoKlasiePierwszej;
 
 public class Sterujaca {
 
     void testujKlasy2() {
         //testujPracownikowIsA();
-        testujPracownikowHasA();
+        //testujPracownikowHasA();
+
+        testujPodsumowanieKlas();
+    }
+
+    private void testujPodsumowanieKlas() {
+        //testujemy funkcjonalność klas z podsumowania dziedziczenia
+        KlasaDziedziczacaPoKlasiePierwszej k1 = new KlasaDziedziczacaPoKlasiePierwszej();
+        k1.metoda();
+        
     }
 
     private void testujPracownikowHasA() {
