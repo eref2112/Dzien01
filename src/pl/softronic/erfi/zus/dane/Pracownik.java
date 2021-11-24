@@ -103,4 +103,6 @@ Nie można mieć dwóch kosruktorów o tej samej sygnaturze
            + " wynagrodzenie: " + "  liczba pracowników: " +  liczbaPracowników;
  }
 
+
+
 }

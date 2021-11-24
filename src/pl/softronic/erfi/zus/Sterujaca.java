@@ -9,7 +9,7 @@ import eu.softronic.Utils;
 //Można i tak
 import pl.softronic.erfi.zus.dane.*;
 import pl.softronic.erfi.zus.dane.Pracownik;
-import pl.softronic.erfi.zus.podsumowanie.dziedziczenie.KlasaDziedziczacaPoKlasiePierwszej;
+import pl.softronic.erfi.zus.podsumowanie.dziedziczenie.*;
 
 public class Sterujaca {
 
@@ -17,14 +17,35 @@ public class Sterujaca {
         //testujPracownikowIsA();
         //testujPracownikowHasA();
 
-        testujPodsumowanieKlas();
+        //testujPodsumowanieKlas();
+        testujInstanceOf();
+    }
+
+    private void testujInstanceOf() {
+        /*
+        Klasa Objet jest na szczcie hierarchii dzidziczenia;
+         */
+
+        KlasaDziedziczacaNaDrugimPoziomie zm1 = new KlasaDziedziczacaNaTrzecimPoziomie();
+        KlasaDziedziczacaNaDrugimPoziomie zm2 = new KlasaDziedziczacaNaDrugimPoziomie();
+
+        boolean czyJest = (zm1 instanceof KlasaDziedziczacaNaDrugimPoziomie);
+        //boolean czyJest1 = zm2 instanceof Object;
+
+        String wartosc = ((KlasaDziedziczacaNaDrugimPoziomie) zm1).dana2;
+         wartosc = ((KlasaDziedziczacaNaTrzecimPoziomie) zm1).dana3;
+
+        Utils.wyswietl(czyJest);
     }
 
     private void testujPodsumowanieKlas() {
         //testujemy funkcjonalność klas z podsumowania dziedziczenia
         KlasaDziedziczacaPoKlasiePierwszej k1 = new KlasaDziedziczacaPoKlasiePierwszej();
         k1.metoda();
-        
+
+        KlasaZzadeklarowanaKlasaPierwsza k2 = new KlasaZzadeklarowanaKlasaPierwsza();
+        k2.metoda();
+
     }
 
     private void testujPracownikowHasA() {

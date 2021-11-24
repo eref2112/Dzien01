@@ -8,6 +8,16 @@ public class PracownikEtatowyHasA {
     //Wstawiony (zadeklarowany) Pracownik;
     public Pracownik pracownik = null;
 
+
+
+
+
+
+
+
+
+
+
     static float pensjaBazowa = 2000f;
     int staz = 0;
     public String wyksztalcenie = "P";
