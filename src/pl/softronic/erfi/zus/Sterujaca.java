@@ -115,6 +115,16 @@ public class Sterujaca {
 
     }
 
+/*
+
+    Metoda została wykomentowana ponieważ klasa Pracownik została zmieniona na klasę
+    absrakcyjną, na podstawie której nie można bezpośrednio tworzyć obiektów
+
+    W klasie Pracownik została dodana metoda:
+
+    Trzeba by było przerobić procedurę
+
+     public abstract String wyslijInformacjeDoPracownika();
 
     void testujKlasy1() {
         Przyklady przyklady1 = new Przyklady();
@@ -173,6 +183,8 @@ public class Sterujaca {
 
 
     }
+
+ */
 
 
 }

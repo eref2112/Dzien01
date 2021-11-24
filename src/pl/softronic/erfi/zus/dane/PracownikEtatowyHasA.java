@@ -9,15 +9,6 @@ public class PracownikEtatowyHasA {
     public Pracownik pracownik = null;
 
 
-
-
-
-
-
-
-
-
-
     static float pensjaBazowa = 2000f;
     int staz = 0;
     public String wyksztalcenie = "P";
@@ -25,7 +16,7 @@ public class PracownikEtatowyHasA {
     private Float pensja = 1000.0f;
 
     public PracownikEtatowyHasA(){
-        pracownik = new Pracownik();
+        pracownik = new PracownikKlasaPomocnicza();
     }
 
     public Pracownik getPracownik() {

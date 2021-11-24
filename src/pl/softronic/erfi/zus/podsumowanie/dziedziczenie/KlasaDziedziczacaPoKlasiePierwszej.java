@@ -7,6 +7,8 @@ public class KlasaDziedziczacaPoKlasiePierwszej extends KlasaBazowaPierwsza {
 
     }
 
+
+
     public void metoda(){
         super.wyswietlKomunikat();
         Utils.wyswietl("uruchomienie metody z klasy KlasaDziedziczacaPoKlasiePierwszej" );

@@ -12,6 +12,11 @@ public class PracownikEtatowy extends Pracownik {
         //Utils.wyswietl("konstruktor bezparametrowy z klasy etat " + this.getClass().getName());
     }
 
+    @Override
+    public String wyslijInformacjeDoPracownika() {
+        return null;
+    }
+
     public PracownikEtatowy(String imie, String nazwisko, int wiek, int staz, String wyksztalcenie, boolean wZwiazku) {
         super(imie, nazwisko, wiek);
         this.staz = staz;

@@ -7,7 +7,7 @@ Klasa Pracownik klasą bazową, podstawową
 
 Porzebne będą klasy dla pracowników: etatowych, na umowę zlecenie, na umowę o dzieło
  */
-public class Pracownik {
+public abstract class Pracownik {
   static public int liczbaPracowników = 0;
 
   public String imie = "Jan";
@@ -61,7 +61,7 @@ Nie można mieć dwóch kosruktorów o tej samej sygnaturze
  }
  */
 
-
+public abstract String wyslijInformacjeDoPracownika();
 
  public Pracownik(String imie, String nazwisko) {
   liczbaPracowników++;

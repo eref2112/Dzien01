@@ -6,7 +6,9 @@ public class KlasaZzadeklarowanaKlasaPierwsza {
     public KlasaBazowaPierwsza klasaBazowaPierwsza;
 
     public KlasaZzadeklarowanaKlasaPierwsza(){
-        klasaBazowaPierwsza = new KlasaBazowaPierwsza("nowa wymysla nazwa");
+        klasaBazowaPierwsza = new KlasaBazowaPierwsza("nowa wymysla nazwa") {
+
+        };
     }
 
     public KlasaZzadeklarowanaKlasaPierwsza(String nowaNazwa){
