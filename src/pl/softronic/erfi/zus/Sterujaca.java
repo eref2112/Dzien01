@@ -13,11 +13,51 @@ import pl.softronic.erfi.zus.dane.Pracownik;
 public class Sterujaca {
 
     void testujKlasy2() {
-        testujPracownikow();
-
+        //testujPracownikowIsA();
+        testujPracownikowHasA();
     }
 
-    private void testujPracownikow() {
+    private void testujPracownikowHasA() {
+        //Ale nie tylko
+        PracownikEtatowy pracEtIs1 = new PracownikEtatowy();
+        PracownikEtatowyHasA pracEtHas1 = new PracownikEtatowyHasA();
+
+        //pracEtIs1.setWyksztalcenie("W");
+        //pracEtHas1.setWyksztalcenie("W");
+
+        //System.out.println(pracEtIs1.imie + " " + pracEtIs1.nazwisko + " " + pracEtIs1.wyksztalcenie);
+        //System.out.println(pracEtHas1.pracownik.imie + " " + pracEtHas1.pracownik.nazwisko + " " + pracEtHas1.wyksztalcenie);
+
+        Pracownicy pracownicy = new Pracownicy();
+        //Jak wyświetlić informacje o racowniku pierwszym - prac1
+        System.out.println(pracownicy.prac1.pracownik.imie + " " + pracownicy.prac1.pracownik.nazwisko + " " + pracownicy.prac1.wyksztalcenie);
+
+
+        //Teraz z trzeciego pracownika (od dziedziczenia)
+        System.out.println(pracownicy.prac3.imie + " " + pracownicy.prac3.nazwisko + " " + pracownicy.prac3.wyksztalcenie);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    Testowanie klasy PracownikEtatowy zbudowanej metodą dziedziczenia
+     */
+    private void testujPracownikowIsA() {
         //Pracownik z klasy bazowej (podstawowej)
         //Pracownik prac = new Pracownik();
         //Utils.wyswietl(prac);

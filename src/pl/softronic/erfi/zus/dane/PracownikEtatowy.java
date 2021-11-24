@@ -1,9 +1,10 @@
 package pl.softronic.erfi.zus.dane;
 
+//Budowanie klasy w modelu IsA dziedziczenia (PracownikEtatowy jest równocześnie typem Pracownik)
 public class PracownikEtatowy extends Pracownik {
     static float pensjaBazowa = 2000f;
     int staz = 0;
-    String wyksztalcenie = "P";
+    public String wyksztalcenie = "P";
     boolean wZwiazku = true;
     private Float pensja = 1000.0f;
 
@@ -65,7 +66,7 @@ public class PracownikEtatowy extends Pracownik {
         switch (this.wyksztalcenie) {
             case "P" -> {
                 this.pensja = this.pensja - this.pensja * 0.1f;
-            }
+             }
             case "W" -> this.pensja = this.pensja + this.pensja * 0.2f;
         }
     }

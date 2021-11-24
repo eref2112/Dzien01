@@ -10,8 +10,8 @@ Porzebne będą klasy dla pracowników: etatowych, na umowę zlecenie, na umowę
 public class Pracownik {
   static public int liczbaPracowników = 0;
 
-  String imie = "Jan";
-  String nazwisko = "Kowalski";
+  public String imie = "Jan";
+  public String nazwisko = "Kowalski";
   String pesel = "";
   int wiek = 10;
 
