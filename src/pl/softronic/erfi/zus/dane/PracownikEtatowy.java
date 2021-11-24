@@ -5,7 +5,7 @@ public class PracownikEtatowy extends Pracownik {
     int staz = 0;
     String wyksztalcenie = "P";
     boolean wZwiazku = true;
-    private Float pensja = 0.0f;
+    private Float pensja = 1000.0f;
 
     public PracownikEtatowy() {
         //Utils.wyswietl("konstruktor bezparametrowy z klasy etat " + this.getClass().getName());
