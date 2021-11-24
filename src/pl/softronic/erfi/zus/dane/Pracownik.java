@@ -13,7 +13,7 @@ public class Pracownik {
   String imie = "Jan";
   String nazwisko = "Kowalski";
   String pesel = "";
-  int wiek = 0;
+  int wiek = 10;
 
 
 
